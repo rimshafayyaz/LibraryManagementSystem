@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2190AAC9-9466-449C-89F6-98E07848AFBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibraryManagementSystem</RootNamespace>
+    <AssemblyName>LibraryManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="librarian_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="librarian_dashboard.Designer.cs">
+      <DependentUpon>librarian_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="librarian_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="librarian_login.Designer.cs">
+      <DependentUpon>librarian_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="student_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_dashboard.Designer.cs">
+      <DependentUpon>student_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_login.Designer.cs">
+      <DependentUpon>student_login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="librarian_dashboard.resx">
+      <DependentUpon>librarian_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="librarian_login.resx">
+      <DependentUpon>librarian_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="student_dashboard.resx">
+      <DependentUpon>student_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_login.resx">
+      <DependentUpon>student_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-logo-icon-vector-6360824.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-logo-icon-vector-63608241.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light-_Untitled_%28light_2%29_.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stickers-abstract-triangle-background-light-blue-pink-and-white-colour.jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1481627834876-b7833e8f5570.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bestbooks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GettyImages-1059602932.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79997931-shelves-with-colorful-books-on-concrete-background-knowledge-concept-copy-space-3d-rendering.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1507842217343-583bb7270b66.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rows-books-library_73152-2680.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-stack-library-room-blurred-260nw-621157613.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-yellow-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-wooden-light-brown-texture-vector-background-image_306865.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 Differences between a study background and a literature review.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\getting-real-about-your-career-after-graduation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-Books-Background-for-Polkadot-Books-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42-425158_high-resolution-books-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1524995997946-a1c2e315a42f %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4ea81f1af5de3378404d0cbe2ddcc38c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school-books-on-desk--education-concept-871454068-5b548900c9e77c005b04fc8c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\getting-real-about-your-career-after-graduation1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\602252b4b408f8b8902c94868e6f3ced.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-quotes-1531945007.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
